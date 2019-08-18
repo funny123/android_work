@@ -1,10 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.yideng.shengqian">
+    package="com.tbk">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application tools:replace="android:allowBackup"
+        android:usesCleartextTraffic="true"
       android:name=".MainApplication"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
@@ -22,11 +23,6 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-        <!--设置淘宝登录页面Activity的样式-->
-        <activity
-            android:name="com.ali.auth.third.ui.LoginActivity"
-            android:theme="@style/SwbTransparentLight"
-            tools:replace="android:theme" />
     </application>
 
 </manifest>

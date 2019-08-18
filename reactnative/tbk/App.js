@@ -1,23 +1,19 @@
-/* jshint esversion: 6 */
 /*
- * @Descripttion:
- * @version:
+ * @Descripttion: 
+ * @version: 
  * @Author: Marlon
- * @Date: 2019-08-17 10:55:18
+ * @Date: 2019-08-18 13:40:23
  * @LastEditors: Marlon
- * @LastEditTime: 2019-08-18 09:56:21
+ * @LastEditTime: 2019-08-18 13:44:42
  */
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import ToastExample from "./ToastExample";
 
 export default class HelloWorldApp extends Component {
-
   render() {
-    ToastExample.show("马先生1122888", ToastExample.LONG);
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Hello, world1122!</Text>
+        <Text>Hello, world!</Text>
       </View>
     );
   }
